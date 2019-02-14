@@ -20,7 +20,7 @@ def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   checkCheese = array.collect do |types| cheese_types.include?(types) end
   if checkCheese.any? {|values| values == true}
-    return checkCheese.detect {|cheese| cheese == true}
+    return checkCheese.detect {|cheese| cheese == cheese_types}
   else
     return nil
   end
