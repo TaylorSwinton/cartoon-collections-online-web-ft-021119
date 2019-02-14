@@ -23,7 +23,7 @@ def find_the_cheese(array)
 #  checkCheese = array.collect do |types| cheese_types.include?(types) end
 
   cheese_types.detect do |cheese|
-
+    array.include?(cheese)
     binding.pry
   end
 end
